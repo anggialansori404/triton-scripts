@@ -1,5 +1,5 @@
-ZIPNAME=Perf-Riva-$(date +"%S-%F")
-git clone https://github.com/Thagoo/AnyKernel3 -b ts-proton-rova --depth 1 /tmp/AnyKernel3
+ZIPNAME=New-Perf-Riva-$(date +"%S-%F")
+git clone https://github.com/anggialansori404/AnyKernel3 -b ts-proton-rova --depth 1 /tmp/AnyKernel3
 
 mkdir -p out
 
@@ -39,4 +39,4 @@ curl -F document=@$ZIPNAME.zip "https://api.telegram.org/bot$TOKEN/sendDocument"
         -F "disable_web_page_preview=true" \
         -F "parse_mode=html"  \
 	-F caption="#Perf #New #4.9 #Riva
-Compiler- Proton-Clang-v12 follow for more updates"
+Compiler- Proton-Clang-v12 follow @Elementooo for more updates"
