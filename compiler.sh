@@ -1,11 +1,11 @@
-ZIPNAME=Triton-Storm-Rova-$(date +"%S-%F")
+ZIPNAME=Perf-Riva-$(date +"%S-%F")
 git clone https://github.com/Thagoo/AnyKernel3 -b ts-proton-rova --depth 1 /tmp/AnyKernel3
 
 mkdir -p out
 
-export KBUILD_BUILD_USER=Thago
+export KBUILD_BUILD_USER=Hikarinochikara
 export KBUILD_BUILD_HOST=Drone
-make O=out ARCH=arm64 rova_defconfig
+make O=out ARCH=arm64 riva_defconfig
 
 curl -s -X POST "https://api.telegram.org/bot$TOKEN/sendMessage" \
         -d chat_id="$CID" \
@@ -38,5 +38,5 @@ curl -F document=@$ZIPNAME.zip "https://api.telegram.org/bot$TOKEN/sendDocument"
         -F chat_id=$CID\
         -F "disable_web_page_preview=true" \
         -F "parse_mode=html"  \
-	-F caption="#triton #storm #4.9 #Rova
-Compiler- Proton-Clang-v12 follow @tboxxx for more updates"
+	-F caption="#Perf #New #4.9 #Riva
+Compiler- Proton-Clang-v12 follow for more updates"
