@@ -1,11 +1,11 @@
-ZIPNAME=New-Perf-Riva-$(date +"%S-%F")
+ZIPNAME=Kaze-Riva-$(date +"%S-%F")
 git clone https://github.com/anggialansori404/AnyKernel3 -b ts-proton-rova --depth 1 /tmp/AnyKernel3
 
 mkdir -p out
 
 export KBUILD_BUILD_USER=Hikarinochikara
 export KBUILD_BUILD_HOST=Drone
-make O=out ARCH=arm64 riva_defconfig
+make O=out ARCH=arm64 rova_defconfig
 
 curl -s -X POST "https://api.telegram.org/bot$TOKEN/sendMessage" \
         -d chat_id="$CID" \
