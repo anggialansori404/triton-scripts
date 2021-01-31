@@ -38,5 +38,5 @@ curl -F document=@$ZIPNAME.zip "https://api.telegram.org/bot$TOKEN/sendDocument"
         -F chat_id=$CID\
         -F "disable_web_page_preview=true" \
         -F "parse_mode=html"  \
-	-F caption="#Kaze #Wind #4.9 #Rova
+	-F caption="⚠️ <i>Warning: New build is available!</i> at commit <b>$(git log --pretty=format:'%s' -1)</b> #Kaze #Wind #4.9 #Rova
 Compiler- Proton-Clang-v12 follow @Elementooo for more updates"
