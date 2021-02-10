@@ -1,4 +1,4 @@
-ZIPNAME=Kaze-Rova-$(date +"%S-%F")
+ZIPNAME=Oniichan-Rova-$(date +"%S-%F")
 git clone https://github.com/anggialansori404/AnyKernel3 -b Kaze --depth 1 /tmp/AnyKernel3
 
 mkdir -p out
@@ -38,5 +38,4 @@ curl -F document=@$ZIPNAME.zip "https://api.telegram.org/bot$TOKEN/sendDocument"
         -F chat_id=$CID\
         -F "disable_web_page_preview=true" \
         -F "parse_mode=html"  \
-	-F caption="⚠️ <i>Warning: New build is available!</i> #Kaze #Wind #4.9 #Rova
-Compiler- Proton-Clang-v12 follow @Elementooo for more updates"
+	-F caption="⚠️ <i>Warning: New build is available!</i> #Ooniichan #:v #4.9 #Rova follow @Elementooo for more updates"
